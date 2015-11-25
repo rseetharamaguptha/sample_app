@@ -1,0 +1,7 @@
+<%= form_for(@mpost.likes.where(user_id: @user.id).first,
+            html: { method: :delete },
+            remote: true) do |f| %>
+            <%= hidden_field_tag :mpost_id, @mpost.id %>
+            <%= hidden_field_tag :user_id, @user.id %>
+<%= f.submit "Liked", class: "like-btn" %>
+<% end %>

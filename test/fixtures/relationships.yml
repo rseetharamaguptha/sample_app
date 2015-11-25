@@ -1,0 +1,15 @@
+one:
+   follower: michael
+   followed: kamal
+
+two:
+   follower: vijay
+   followed: ajit
+
+three:
+   follower: ajit
+   followed: kamal
+
+four:
+   follower: kamal
+   followed: michael

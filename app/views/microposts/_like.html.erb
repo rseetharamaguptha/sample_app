@@ -1,0 +1,7 @@
+<%= form_for(@mpost.likes.build, remote: true) do |f| %>
+  <div>
+  	<%= hidden_field_tag :user_id, @user.id %>
+  	<%= hidden_field_tag :mpost_id, @mpost.id %>
+  </div>
+  <%= f.submit "Like", class: "like-btn" %>
+<% end %>

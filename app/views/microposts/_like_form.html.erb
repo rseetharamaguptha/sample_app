@@ -1,0 +1,9 @@
+<span id="micropost-like-<%= @mpost.id %>" class="like">
+	<div id='like_form-<%= @mpost.id %>'>
+		<% if @mpost && @mpost.likes && @mpost.likes.where(user_id:@user.id).any? %>
+			<%= render 'microposts/unlike' %>
+		<% else %>
+			<%= render 'microposts/like' %>
+		<% end %>
+	</div>
+</span>
